@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 
-const IMAGE_URL = "https://loremflickr.com/120/120/sun";
+const teamImages = ["./bebe.png"];
 
 const Bubble = forwardRef(({ text, id }, ref) => (
   <div ref={ref}>
@@ -8,7 +8,7 @@ const Bubble = forwardRef(({ text, id }, ref) => (
       <span
         className="image"
         style={{
-          backgroundImage: `url('${IMAGE_URL}?random=${id}')`,
+          backgroundImage: `url('${teamImages}?random=${id}')`,
         }}
       />
     </div>
